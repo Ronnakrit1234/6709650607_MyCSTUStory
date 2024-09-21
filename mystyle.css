@@ -1,0 +1,274 @@
+
+/* อาจาร์ครับเครื่องของผม มันเกิดปัญหาตรงที่ ผมแปลงไฟล์ HTML CSS กลายเป็นไฟล์ ZIP,tgz
+             พอผมเปิด projectขึ้นมา พบว่ามันขึ้นแค่ HTML
+             CSS ของผมมันไม่ขึ้นมา     
+             ปล. หาทุกทางทำเเล้วก็ยังไม่ได้ 
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+*{
+    box-sizing: border-box;
+    text-align: center;
+    color: aliceblue;
+    font-family: "SUSE", sans-serif;
+    
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(resources/ice.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: brightness(35%);
+}
+
+.container{
+    
+    display: grid;
+    grid-template-rows: 15rem 5rem 8rem 12rem 10rem 7rem;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+
+
+.box{
+    border: 2px solid rgba(255, 255, 255, 0);
+}
+
+
+header{
+    grid-row: 1/2;
+    grid-column: 1/3;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.43);
+    height: 6rem;
+    
+}
+
+
+li{
+    list-style: none;
+    font-size: 2rem;
+    margin-right: 4rem;
+    padding: 1.3rem;
+    
+    
+}
+
+
+header > ul{
+    display: flex;
+    align-items: center;
+}
+
+
+header > h1{
+    display: flex;
+    margin-left: 1rem;
+    align-items: center;
+    font-size: 3rem;
+    position: relative;
+    left: 10%;
+    
+}
+
+a{
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+}
+
+
+nav{
+    display: flex;
+    grid-row: 2/3;
+    grid-column: 1/3;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    margin-bottom: 1px;
+    height: 2rem;
+
+    
+    
+}
+
+nav > h3{
+    font-size: 2rem;
+    position: relative;
+    bottom: 2rem;
+}
+
+#about{
+    grid-row: 3/4;
+    grid-column: 1/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.43);
+}
+
+
+
+.video{
+    background-color: rgba(0, 0, 0, 0.43);
+    
+}
+
+.about_me{
+    background-color: rgba(0, 0, 0, 0.43);
+}
+
+
+footer{
+    grid-row: 6/7;
+    grid-column: 1/3;
+    background-color: rgb(0, 0, 0);
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+
+img{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+video{
+    grid-row: 4/5;
+    grid-column: 2/3;
+    height: 100%;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+input{
+    color: black;
+    border-radius: 60px;
+    text-align: start;
+    height: 2rem;
+    width: 60%;
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    border: 0;
+    grid-row: 4/5;
+    grid-column: 1/2;
+    position: relative;
+    top: 8%;
+    
+
+
+}
+
+.contact{
+    display: flex;
+    margin-left: 2rem;
+
+}
+
+.contact > h3{
+    font-size: 2rem;
+    
+}
+
+#facebook{
+    width: 2rem;
+    height: 2rem;
+    margin-left: 2rem;
+    border-radius: 50%;
+    position: relative;
+    top: 2rem;
+
+}
+
+#ig{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin-left: 2rem;
+    position: relative;
+    top: 2rem;
+}
+
+#tel{
+    width: 2rem;
+    height: 2rem;
+    border-radius:50%;
+    margin-left: 2rem;
+    position: relative;
+    top: 2rem;
+}
+
+li > a:hover{
+    color: rgb(0, 0, 0);
+    background-color: aliceblue;
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+}
+
+.contact > img:hover{
+    border: 4px dashed rgb(255, 238, 0);
+    cursor: pointer;
+}
+
+input:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+h1:hover{
+    text-decoration: double underline white;
+    cursor:default;
+}
+
+h3:hover{
+    cursor:default;
+}
+
+nav > h3:hover{
+    color: rgb(255, 238, 0);
+}
+
+#about > h3:hover{
+    color: rgb(255, 238, 0);
+}
+
+.contact > h3:hover{
+    color: rgb(255, 238, 0);
+}
+
+.rick{
+    grid-column: 1/3;
+    grid-row: 5/6;
+    position: relative;
+    top: 4rem;
+    
+}
+.rick > a{
+    font-size: 1rem;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    color: black;
+}
+
+.rick > a:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border: 3px dashed rgb(255, 238, 0);
+}
